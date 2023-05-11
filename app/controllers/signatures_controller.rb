@@ -5,6 +5,8 @@ class SignaturesController < ApplicationController
   end
 
   def show
-    render json: 'something'
+    pdfbox = PDFBoxWrapper.new(Rails.root.join('lib', 'sample.pdf').to_s)
+
+    render json: pdfbox.read_text
   end
 end

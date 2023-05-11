@@ -17,6 +17,8 @@ gem 'puma', '~> 5.0'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
+gem 'nokogiri'
+
 group :development do
   gem 'listen', '~> 3.3'
 end
